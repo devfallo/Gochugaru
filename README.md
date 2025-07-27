@@ -4,13 +4,13 @@ This guide helps you set up your development environment, especially for PyTorch
 
 ## 1. System Information Check
 
-To check your Python version, macOS version, and CPU architecture, run the following script:
+Before starting development, it's crucial to check your system's compatibility. Run the following script to verify your Python version, macOS version, and CPU architecture:
 
 ```bash
 python system_check.py
 ```
 
-This script will output your system details and provide a tailored PyTorch installation recommendation.
+This script will output your system details and provide a tailored PyTorch installation recommendation, ensuring you use a compatible version for your environment.
 
 ## 2. PyTorch Installation Guide
 
