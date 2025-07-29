@@ -166,7 +166,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       <div className="relative h-screen">
-        <video src="/intro.mp4" autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover z-0"/>
+        <video src="/Gochugaru/intro.mp4" autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover z-0"/>
         <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundColor: 'var(--overlay-background)', zIndex: 10 }}></div>
         <header className="absolute top-0 left-0 w-full p-8 flex justify-between items-center z-30 bg-[var(--background)] text-[var(--foreground)]">
           <button onClick={() => window.location.reload()} className="text-3xl font-bold cursor-pointer bg-transparent border-none">{c.title}</button>
@@ -190,7 +190,7 @@ export default function Home() {
 
       <section id="product" className="py-24 bg-[var(--card-background)]">
         <div className="container mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
-          <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}><Image src="/product.png" alt="Product" className="rounded-lg shadow-2xl" width={500} height={500} /></motion.div>
+          <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}><Image src="/Gochugaru/product.png" alt="Product" className="rounded-lg shadow-2xl" width={500} height={500} /></motion.div>
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
             <h3 className="text-4xl md:text-5xl font-bold mb-8 text-[var(--foreground)]">{c.product.title}</h3>
             <p className="text-lg md:text-xl text-[var(--foreground-muted)] leading-relaxed">{c.product.description}</p>
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="md:col-span-2">
               <AnimatePresence mode="wait">
                 <motion.div key={selectedRecipe.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.5 }} className="bg-[var(--card-background)] p-8 rounded-lg shadow-2xl">
-                  <Image src="/recipe.png" alt={selectedRecipe.name} className="w-full h-64 object-cover rounded-lg mb-8" width={500} height={256} />
+                  <Image src="/Gochugaru/recipe.png" alt={selectedRecipe.name} className="w-full h-64 object-cover rounded-lg mb-8" width={500} height={256} />
                   <h4 className="text-3xl md:text-4xl font-bold mb-6 text-[var(--foreground)]">{selectedRecipe.name}</h4>
                   <div className="text-left">
                     <h5 className="text-2xl font-bold mb-3 text-[var(--text-accent)]">{c.recipe.ingredients}</h5>
